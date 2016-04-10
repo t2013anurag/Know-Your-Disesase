@@ -73,6 +73,15 @@
         android:layout_alignStart="@+id/editText3"
         android:layout_marginBottom="10dp"/>
 
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:prompt="@string/disease_prompt"
+        android:entries="@array/diesase_array"
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
 
 
     <Button
@@ -82,8 +91,10 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="87dp"
+        android:layout_marginBottom="47dp"
         android:background="@color/colorPrimary"
         android:textColor="@color/white"/>
+
+
 
 </RelativeLayout>

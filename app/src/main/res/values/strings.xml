@@ -5,4 +5,26 @@
     <string name="age">Your age</string>
     <string name="weight">Your weight (in kgs)</string>
     <string name="height">Your height (in cms)</string>
+    <string name="disease_prompt">Select Disease</string>
+
+    <string name="asthama">Asthama</string>
+    <string name="cholera">Cholera</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="diarrhea">Diarrhoea</string>
+    <string name="jaundice">Jaundice</string>
+    <string name="malaria">Malaria</string>
+    <string name="swineflu">Swine Flu</string>
+    <string name="viralfever">Viral Fever</string>
+
+    <string-array name="diesase_array">
+        <item>@string/asthama</item>
+        <item>@string/cholera</item>
+        <item>@string/diabetes</item>
+        <item>@string/diarrhea</item>
+        <item>@string/jaundice</item>
+        <item>@string/malaria</item>
+        <item>@string/swineflu</item>
+        <item>@string/viralfever</item>
+    </string-array>
+
 </resources>
