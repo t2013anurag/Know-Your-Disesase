@@ -39,7 +39,8 @@ public class DiseaseDetail extends AppCompatActivity {
         String cause = bundle.getString("cause");
         String symptoms = bundle.getString("symptoms");
         String cure = bundle.getString("cure");
-        Log.d(LOG_TAG,"fields " + name+age+height+weight+bmi+disease+cause+symptoms+cure);
+
+//        Log.d(LOG_TAG,"fields " + name+age+height+weight+bmi+disease+cause+symptoms+cure);
 
         fbmi = (TextView) findViewById(R.id.bmi);
         fbmi.setText(bmi);
