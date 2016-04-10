@@ -6,6 +6,10 @@
     <string name="weight">Your weight (in kgs)</string>
     <string name="height">Your height (in cms)</string>
     <string name="disease_prompt">Select Disease</string>
+    <string name="bmi_text">Your BMI is :</string>
+    <string name="cure_text">Cure :</string>
+    <string name="symptoms_text">Symptoms :</string>
+    <string name="cause_text">Causes :</string>
 
     <string name="asthama">Asthama</string>
     <string name="cholera">Cholera</string>
