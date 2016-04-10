@@ -74,11 +74,13 @@ public class MainActivity extends AppCompatActivity {
               Log.d(LOG_TAG, "BMI is " + bmi);
               DetailItem item;
               item = new DetailItem();
+
               item.setName(name);
               item.setAge(age);
               item.setHeight(height);
               item.setWeight(weight);
               item.setBmi(bmi);
+              item.setDisease(spinner_text);
 
               String disesase_user = spinner_text.toLowerCase();
               Toast.makeText(MainActivity.this, name+age+height+weight+spinner_text+bmi+ item.getBmi().toString(),
@@ -442,6 +444,17 @@ public class MainActivity extends AppCompatActivity {
 
               item.setCure(disease_cure[index]);
               Log.d(LOG_TAG, "Cure is : " + item.getCure());
+              Intent intent = new Intent(MainActivity.this, DiseaseDetail.class);
+              intent.putExtra("name", item.getName())
+                      .putExtra("age", item.getAge())
+                      .putExtra("height", item.getHeight())
+                      .putExtra("weight", item.getWeight())
+                      .putExtra("bmi", item.getBmi())
+                      .putExtra("diseasename", item.getDisease())
+                      .putExtra("cure", item.getCure())
+                      .putExtra("symptoms", item.getSymptoms())
+                      .putExtra("cause", item.getCause());
+              startActivity(intent);
           }
       });
 

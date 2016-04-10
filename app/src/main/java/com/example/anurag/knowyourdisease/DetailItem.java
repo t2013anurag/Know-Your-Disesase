@@ -12,6 +12,7 @@ public class DetailItem {
     private String cause;
     private String symptoms;
     private String cure;
+    private String diseasename;
 
     public DetailItem(){
         super();
@@ -27,6 +28,9 @@ public class DetailItem {
     }
     public String getHeight() {
         return height;
+    }
+    public String getDisease() {
+        return diseasename;
     }
     public Double getBmi() {
         return bmi;
@@ -52,6 +56,9 @@ public class DetailItem {
     }
     public void setAge(String age) {
         this.age = age;
+    }
+    public void setDisease(String diseasename) {
+        this.diseasename = diseasename;
     }
     public void setBmi(double bmi) {
         this.bmi = bmi;
