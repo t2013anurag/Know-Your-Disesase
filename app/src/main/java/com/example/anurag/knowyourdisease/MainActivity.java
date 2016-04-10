@@ -65,7 +65,26 @@ public class MainActivity extends AppCompatActivity {
               final String weight = text_weight.getText().toString();
               Log.d(LOG_TAG, weight);
 
-              Toast.makeText(MainActivity.this, name+age+height+weight+spinner_text, Toast.LENGTH_LONG).show();
+              int wt = Integer.parseInt(weight);
+              Log.d(LOG_TAG, "Weight is " + wt);
+              double ht = Integer.parseInt(height);
+              ht = ht/100.0;
+              Log.d(LOG_TAG, "Height is " + ht);
+              double bmi = wt/(ht*ht);
+              Log.d(LOG_TAG, "BMI is " + bmi);
+              DetailItem item;
+              item = new DetailItem();
+              item.setName(name);
+              item.setAge(age);
+              item.setHeight(height);
+              item.setWeight(weight);
+              item.setBmi(bmi);
+
+              Toast.makeText(MainActivity.this, name+age+height+weight+spinner_text+bmi+ item.getBmi().toString(),
+              Toast.LENGTH_LONG).show();
+
+
+
           }
       });
 
