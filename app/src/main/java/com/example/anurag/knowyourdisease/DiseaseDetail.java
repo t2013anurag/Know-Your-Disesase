@@ -30,10 +30,10 @@ public class DiseaseDetail extends AppCompatActivity {
         setContentView(R.layout.disease_view);
         Bundle bundle = getIntent().getExtras();
 
-        String name = bundle.getString("name");
-        String age = bundle.getString("age");
-        String height = bundle.getString("height");
-        String weight = bundle.getString("weight");
+        // String name = bundle.getString("name");
+        // String age = bundle.getString("age");
+        // String height = bundle.getString("height");
+        // String weight = bundle.getString("weight");
         String bmi = bundle.getString("bmi");
         String disease = bundle.getString("disease");
         String cause = bundle.getString("cause");
