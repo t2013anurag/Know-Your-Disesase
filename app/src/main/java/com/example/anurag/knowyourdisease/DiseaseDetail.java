@@ -14,10 +14,10 @@ import org.w3c.dom.Text;
  */
 public class DiseaseDetail extends AppCompatActivity {
     private  final String LOG_TAG = DiseaseDetail.class.getSimpleName();
-    private TextView fname;
-    private TextView fage;
-    private TextView fheight;
-    private TextView fweight;
+    //private TextView fname;
+    //private TextView fage;
+    //private TextView fheight;
+    //private TextView fweight;
     private TextView fbmi;
     private TextView fdisease;
     private TextView fcause;
